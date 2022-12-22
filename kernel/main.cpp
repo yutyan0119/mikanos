@@ -74,11 +74,11 @@ extern "C" void KernelMain(const FrameBufferConfig& frame_buffer_config) {
   switch (frame_buffer_config.pixel_format) {
     case kPixelRGBResv8BitPerColor:
       pixel_writer = new(pixel_writer_buf)
-        RGBResv8BitPerColorPixelWriter{frame_buffer_config};
+        RGBResv8BitPerColorPixelWriter(frame_buffer_config);
       break;
     case kPixelBGRResv8BitPerColor:
       pixel_writer = new(pixel_writer_buf)
-        BGRResv8BitPerColorPixelWriter{frame_buffer_config};
+        BGRResv8BitPerColorPixelWriter(frame_buffer_config);
       break;
   }
 

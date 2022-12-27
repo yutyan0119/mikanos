@@ -51,6 +51,7 @@ extern "C" void KernelMain(const FrameBufferConfig& frame_buffer_config) {
   for (char c = '!'; c <= '~'; ++c, ++i) {
     WriteAscii(*pixel_writer, 8 * i, 50, c, {0, 0, 0});
   }
+  WriteAscii(*pixel_writer, 8 * (i+1), 50, 'Y', {34,34,34});
   // #@@range_end(write_fonts)
   while (1) __asm__("hlt");
 }

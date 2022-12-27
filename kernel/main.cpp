@@ -42,7 +42,7 @@ extern "C" void KernelMain(const FrameBufferConfig& frame_buffer_config) {
   }
   for (int x = 0; x < 200; ++x) {
     for (int y = 0; y < 100; ++y) {
-      pixel_writer->Write(x, y, {0, 255, 0});
+      pixel_writer->Write(x, y, {100, 255, 255});
     }
   }
 

@@ -50,5 +50,7 @@ extern "C" void KernelMain(const FrameBufferConfig& frame_buffer_config) {
     sprintf(buf, "line %d\n", i);
     console.PutString(buf);
   }
+  sprintf(buf, "hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge\n");
+  console.PutString(buf);
   while (1) __asm__("hlt");
 }
